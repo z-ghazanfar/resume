@@ -1,9 +1,7 @@
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
-% \usepackage[empty]{fullpage}
-\usepackage{geometry}
-\geometry{margin=1in}
+\usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
@@ -21,9 +19,9 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.65in}
+\addtolength{\textwidth}{1.3in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
@@ -84,6 +82,24 @@
     \href{https://linkedin.com/in/zainghazanfar}{\small{linkedin.com/in/zainghazanfar}} 
 \end{center}
 
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Expected Dec 2026}
+			{B.S. in Computer Science, Minor in Business Leadership}{Atlanta, GA}
+
+			\smallskip 
+
+			\small
+			\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+			\textit{Courses:} Data Structures \& Algorithms, Object-Oriented Principles, Intro to AI, Computer Systems \& Networks \\
+			\textit{Awards:} Zell Miller Scholarship, Dean's List $|$ \textit{GPA}: 3.98/4.0 \\
+			\end{tabular*}\vspace{-7pt}
+  \resumeSubHeadingListEnd
+
+\begin{comment}
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
@@ -92,34 +108,32 @@
 \resumeSubHeadingListEnd
 \resumeItem{\qquad \textbf{Concentration}: Devices \& Intelligence}
 \resumeItem{\qquad \textbf{Relevant Coursework:} Data Structures \& Algorithms, Design \& Analysis of Algorithms, Discrete Mathematics, \\\qquad Introduction to AI, Object-Oriented Principles, Perception \& Robotics, Computer Systems \& Networks}
+\end{comment}
 
 \section{Experience}
 \resumeSubHeadingListStart
 
 \resumeSubSubSubheading
-{Machine Learning Research Intern – Autonomous Systems}{Jul 2024 -- Present}
-{Georgia Institute of Technology, ACT Lab}
-\resumeItemListStart
-\resumeItem{Implemented deep learning and reinforcement learning models to optimize autonomous vehicle trajectory planning}
-\resumeItem{Developed and fine-tuned CNN, RNN, and DQN algorithms in PyTorch for  lane-change control optimization}
-\resumeItem{Utilized GAIL and Transformer models to accurately replicate and predict human-like driving behavior in CAVs}
-\resumeItem{Integrated CARLA simulator to create realistic environments for training agents under various driving conditions}
-
-\resumeItemListEnd
-
-\resumeSubSubSubheading
-{Co-Founder \& Automation Software Engineer}{Jan 2024 -- Present}
+{Software Engineer (Co-Founder)}{Jan 2024 -- Present}
 {Zaphor Solutions}
 \resumeItemListStart
-\resumeItem{Built and scaled an Amazon e-commerce business, generating \$200K+ in revenue through FBM and FBA channels}
-\resumeItem{Implemented third-party automation tools (e.g., inventory tracking, repricing software) to streamline operations}
-\resumeItem{Developed Python scripts to analyze sales trends, optimize pricing, and track inventory across 70+ SKUs}
-\resumeItem{Analyzed keyword performance and customer search term reports to restructure Amazon PPC ad groups, resulting in a 20\% increase in conversion rate and improved ACoS across multiple product listings}
-\resumeItem{Managed supply chain logistics, maintaining a 95\% in-stock rate through forecasting and vendor coordination}
+\resumeItem{Scaled an Amazon business to over \$200K in revenue through FBM and FBA by building Python-based automation systems to track inventory, analyze sales trends, and optimize pricing across 70+ SKUs}
+\resumeItem{Used Python and keyword data analysis to restructure Amazon PPC ad groups, improving conversion rate by 20\% and reducing ACoS across multiple listings}
+\resumeItem{Developed forecasting models to maintain a 95\% in-stock rate, automating reorder logic and vendor coordination}
 \resumeItemListEnd
 
 \resumeSubSubSubheading
-{Software Developer – Digital Automation \& Web Systems}{Dec 2022 -- May 2024}
+{Software Engineering Intern}{Jul 2024 -- Present}
+{Georgia Institute of Technology, ACT Lab}
+\resumeItemListStart
+\resumeItem{Built and optimized deep and reinforcement learning models (CNN, RNN, DQN) in PyTorch to improve trajectory planning and lane changes}
+\resumeItem{Led a subteam of 3 undergraduates in refining CNN and DQN models for behavioral cloning and control tasks}
+\resumeItem{Utilized GAIL and Transformer-based models to simulate and predict human-like driving behavior in connected vehicles}
+\resumeItem{Integrated CARLA simulator to create high-fidelity training environments for autonomous agents in various scenarios}
+\resumeItemListEnd
+
+\resumeSubSubSubheading
+{Software Engineer Consultant}{Dec 2022 -- May 2024}
 {Endor Media}
 \resumeItemListStart
 \resumeItem{Engineered scalable AI-powered automation scripts using Python to streamline client acquisition workflows}
@@ -129,10 +143,10 @@
 
 
 \resumeSubSubSubheading
-{Data Science Intern – Materials Informatics}{Jan 2023 -- May 2023}
+{Applied Data Science Researcher}{Jan 2023 -- May 2023}
 {Georgia Institute of Technology, SMART Lab}
 \resumeItemListStart
-\resumeItem{Created Python scripts in Jupyter to automate the analysis of ferroelectric hysteresis behavior and switching dynamics in lead zirconate titanate (PZT) thin films, improving research efficiency and reproducibility.}
+\resumeItem{Built Jupyter-based Python scripts to analyze switching dynamics in PZT thin films, improving research efficiency}
 \resumeItem{Developed custom data visualization tools using Matplotlib to effectively display experimental findings and trends }
 \resumeItem{Implemented GIWAXS dataframes and pandas to classify, preprocess, and analyze large-scale research datasets}
 \resumeItemListEnd
@@ -147,7 +161,7 @@
 {\textbf{Piclasify} $|$ \emph{Python, TensorFlow, OpenCV, Pandas, Scikit-Learn, Matplotlib}}{ }
 \resumeItemListStart
 \resumeItem{Fine-tuned a pre-trained VGG16 model for image classification on CIFAR-10, achieving nearly 85\% accuracy}
-\resumeItem{Engineered a reproducible data preprocessing pipeline using OpenCV and Pandas to normalize, augment, and prepare image data for model training.}
+\resumeItem{Built a reproducible data preprocessing pipeline using OpenCV and Pandas to normalize, augment, and prepare image data for model training}
 \resumeItem{Improved model generalization by conducting systematic hyperparameter optimization across dropout rates, batch sizes, and learning rates using TensorFlow callbacks to prevent overfitting and accelerate convergence}
 \resumeItemListEnd
 
@@ -158,22 +172,18 @@
 \section{Awards and Achievements}
 \resumeSubHeadingListStart
 \resumeProjectHeading{\textbf{Eagle Scout}}{Jun 2023}
-\resumeProjectHeading{\textbf{Zell Miller Scholarship Recipient}}{May 2023}
 \resumeProjectHeading{\textbf{National Merit Semifinalist}}{Sep 2022}
-\resumeProjectHeading{\textbf{Georgia Certificate of Merit}}{Apr 2022}
 \resumeSubHeadingListEnd
 
-\section{Technical Skills}
+\section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 \small{
   \item{
-    \textbf{Languages:} C/C++, Assembly, HTML/CSS, Java, JavaScript, LaTeX, MySQL, Python, R, Swift
-  }
-  \item{
-    \textbf{Frameworks/Tools:} AWS, Android SDK, Docker, FastAPI, Firebase, Firestore, Git, JUnit, Node.js, React
-  }
-  \item{
-    \textbf{Libraries:} Matplotlib, NumPy, OpenCV, pandas, PyTorch, SciPy, Scikit-learn, TensorFlow
+    \textbf{Languages:} Python, C, C++, Java, JavaScript, TypeScript, Go, HTML/CSS, Swift, R, Assembly, LaTeX \\
+    \textbf{Frameworks \& Tools:} AWS, Docker, React, Node.js, Flask, FastAPI, Git, JUnit, Supabase, MongoDB, PostgreSQL, SQLite, TensorFlow, PyTorch, OpenCV \\
+    \textbf{Concepts:} Machine Learning, REST APIs, Cloud Infrastructure, CI/CD, Web Development, Deployment, Concurrency \\
+    \textbf{Soft Skills:} Agile Methodology, Collaboration, Leadership, Communication, Problem Solving  
+
   }
 }
 \end{itemize}
