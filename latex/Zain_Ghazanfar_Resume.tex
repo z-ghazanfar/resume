@@ -1,4 +1,4 @@
-\documentclass[letterpaper,10.5pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -38,7 +38,7 @@
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-3pt}}
   }
 }
 
@@ -70,7 +70,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 
 \begin{document}
 
@@ -79,83 +79,102 @@
     \small U.S. Citizen $|$
     \small Atlanta, GA $|$
     \small 470-621-2799 $|$ \href{mailto:z.ghazanfar922@gmail.com}{\small{z.ghazanfar922@gmail.com}} $|$
-    \href{https://linkedin.com/in/zainghazanfar}{\small{linkedin.com/in/zainghazanfar}} 
+    \href{https://linkedin.com/in/zainghazanfar}{\small{linkedin.com/in/zainghazanfar}} $|$
+    \href{https://github.com/z-ghazanfar}{\small{github.com/z-ghazanfar}}
 \end{center}
-
-
 
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Georgia Institute of Technology}{Expected Dec 2026}
-			{B.S. in Computer Science, Minor in Business Leadership}{Atlanta, GA}
+			{B.S. in Computer Science; Minors in Financial Technology \& Business Leadership}{Atlanta, GA}
 
 			\smallskip 
 
 			\small
 			\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-			\textit{Courses:} Data Structures \& Algorithms, Object-Oriented Principles, Intro to AI, Computer Systems \& Networks \\
+			\textit{Courses:} Machine Learning, Design \& Analysis of Algorithms, DSA, Object-Oriented Principles, Intro to AI, Computer Systems \& Networks \\
 			\textit{Awards:} Zell Miller Scholarship, Dean's List $|$ \textit{GPA}: 3.94/4.0 \\
 			\end{tabular*}\vspace{-7pt}
   \resumeSubHeadingListEnd
 
-\begin{comment}
-\section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Georgia Institute of Technology}{Atlanta, GA}
-{B.S. Computer Science, College of Computing | GPA: $4.00$, Dean's List}{\textit{Expected May 2026}}
-\resumeSubHeadingListEnd
-\resumeItem{\qquad \textbf{Concentration}: Devices \& Intelligence}
-\resumeItem{\qquad \textbf{Relevant Coursework:} Data Structures \& Algorithms, Design \& Analysis of Algorithms, Discrete Mathematics, \\\qquad Introduction to AI, Object-Oriented Principles, Perception \& Robotics, Computer Systems \& Networks}
-\end{comment}
+% \section{Education}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Georgia Institute of Technology}{Expected Dec 2026}
+%       {B.S. in Computer Science; Minors in Financial Technology \& Business Leadership}{Atlanta, GA}
+%       \smallskip 
+%       \small
+%       \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%         \textit{Relevant Coursework:} Data Structures \& Algorithms, Object-Oriented Principles, Intro to AI, Computer Systems \& Networks, \\
+%         \quad Algorithms Design \& Analysis (CS 3510), Design \& Analysis of Algorithms (CS 4641/4646), Machine Learning, Reinforcement Learning, \\
+%         \quad Computer Organization \& Programming (CS 2200), Database Systems (CS 4400 or equivalent), Software Architecture \& Design, \\
+%         \quad Probability \& Statistics (ISYE 3770), Linear Algebra (MATH 3012), ECE 2031 (Digital Design), MGT 3101/4074/4067 (Business Leadership/FinTech electives) \\
+%         \textit{Awards:} Zell Miller Scholarship, Dean's List \quad | \quad \textit{GPA:} 3.94/4.0 \\
+%       \end{tabular*}\vspace{-7pt}
+%   \resumeSubHeadingListEnd
+% \resumeItemListEnd
+
+% \begin{comment}
+% \section{Education}
+% \resumeSubHeadingListStart
+% \resumeSubheading
+% {Georgia Institute of Technology}{Atlanta, GA}
+% {B.S. Computer Science, College of Computing | GPA: $4.00$, Dean's List}{\textit{Expected May 2026}}
+% \resumeSubHeadingListEnd
+% \resumeItem{\qquad \textbf{Concentration}: Devices \& Intelligence}
+% \resumeItem{\qquad \textbf{Relevant Coursework:} Data Structures \& Algorithms, Design \& Analysis of Algorithms, Discrete Mathematics, \\\qquad Introduction to AI, Object-Oriented Principles, Perception \& Robotics, Computer Systems \& Networks}
+% \end{comment}
 
 \section{Experience}
 \resumeSubHeadingListStart
 
-\resumeSubheading
-{Incoming Software Engineer Intern}{June 2025 -- Aug 2025}
-{Arrowstreet Capital}{Boston, MA}
-\smallskip
+  \resumeSubheading
+  {Software Engineer Intern - Research Systems}{June 2025 -- Aug 2025}
+  {Arrowstreet Capital}{Boston, MA}
+  \resumeItemListStart
+    \resumeItem{Engineered access-control infrastructure on Prefect (firm-wide workflow orchestrator for research/trading pipelines), automating roles, service accounts, and workspace provisioning from declarative configs.}
+    \resumeItem{Built an Active Directory client and integrated async aiohttp Prefect API calls to synchronize permissions with lower latency and higher scalability across production environments.}
+    \resumeItem{Automated daily production runs to validate and align access before time-critical workflows executed, improving reliability and reducing operational risk.}
+  \resumeItemListEnd
 
-\resumeSubheading
-{Software Engineer (Co-Founder)}{Jan 2024 -- Present}
-{Zaphor Solutions}{Alpharetta, GA}
-\resumeItemListStart
-\resumeItem{Scaled an Amazon business to over \$200K in revenue through FBM and FBA by building Python-based automation systems to track inventory, analyze sales trends, and optimize pricing across 70+ SKUs}
-\resumeItem{Used Python and keyword data analysis to restructure Amazon PPC ad groups, improving conversion rate by 20\% and reducing ACoS across multiple listings}
-\resumeItem{Developed forecasting models to maintain a 95\% in-stock rate, automating reorder logic and vendor coordination}
-\resumeItemListEnd
+  \resumeSubheading
+  {Software Engineer (Co-Founder)}{Jan 2024 -- Present}
+  {Zaphor Solutions}{Alpharetta, GA}
+  \resumeItemListStart
+  \resumeItem{Scaled an Amazon business to over \$200K in revenue through FBM and FBA by building Python-based automation systems to track inventory, analyze sales trends, and optimize pricing across 70+ SKUs}
+  \resumeItem{Used Python and keyword data analysis to restructure Amazon PPC ad groups, improving conversion rate by 20\% and reducing ACoS across multiple listings}
+  \resumeItem{Developed forecasting models to maintain a 95\% in-stock rate, automating reorder logic and vendor coordination}
+  \resumeItemListEnd
 
-\resumeSubheading
-{Software Engineering Intern}{Jul 2024 -- Present}
-{Georgia Institute of Technology, ACT Lab}{Atlanta, GA}
-\resumeItemListStart
-\resumeItem{Built and optimized deep and reinforcement learning models (CNN, RNN, DQN) in PyTorch to improve trajectory planning and lane changes}
-\resumeItem{Led a subteam of 3 undergraduates in refining CNN and DQN models for behavioral cloning and control tasks}
-\resumeItem{Utilized GAIL and Transformer-based models to simulate and predict human-like driving behavior in connected vehicles}
-\resumeItem{Integrated CARLA simulator to create high-fidelity training environments for autonomous agents in various scenarios}
-\resumeItemListEnd
+  \resumeSubheading
+  {Machine Learning Research Intern}{Jul 2024 -- Present}
+  {Georgia Institute of Technology, ACT Lab}{Atlanta, GA}
+  \resumeItemListStart
+  \resumeItem{Built and optimized deep and reinforcement learning models (CNN, RNN, DQN) in PyTorch to improve trajectory planning and lane changes}
+  \resumeItem{Led a subteam of 3 undergraduates in refining CNN and DQN models for behavioral cloning and control tasks}
+  \resumeItem{Utilized GAIL and Transformer-based models to simulate and predict human-like driving behavior in connected vehicles}
+  \resumeItem{Integrated CARLA simulator to create high-fidelity training environments for autonomous agents in various scenarios}
+  \resumeItemListEnd
 
-\resumeSubSubSubheading
-{Software Engineer Consultant}{Dec 2022 -- May 2024}
-{Endor Media}
-\resumeItemListStart
-\resumeItem{Engineered scalable AI-powered automation scripts using Python to streamline client acquisition workflows}
-\resumeItem{Designed and deployed interactive data dashboards by integrating GoHighLevel APIs with custom frontend components, enabling real-time visualization of campaign KPIs, lead generation metrics, and sales performance}
-\resumeItem{Improved website speeds and SEO by implementing server-side rendering, minimizing render-blocking resources, and optimizing JavaScript bundles, resulting in a 2.3x faster load time and enhanced Google Core Web Vitals}
-\resumeItemListEnd
+  \resumeSubSubSubheading
+  {Software Engineer Consultant}{Dec 2022 -- May 2024}
+  {Endor Media}
+  \resumeItemListStart
+  \resumeItem{Engineered scalable AI-powered automation scripts using Python to streamline client acquisition workflows}
+  \resumeItem{Designed and deployed interactive data dashboards by integrating GoHighLevel APIs with custom frontend components, enabling real-time visualization of campaign KPIs, lead generation metrics, and sales performance}
+  \resumeItem{Improved website speeds and SEO by implementing server-side rendering, minimizing render-blocking resources, and optimizing JavaScript bundles, resulting in a 2.3x faster load time and enhanced Google Core Web Vitals}
+  \resumeItemListEnd
 
 
-\resumeSubheading
-{Applied Data Science Researcher}{Jan 2023 -- May 2023}
-{Georgia Institute of Technology, SMART Lab}{Atlanta, GA}
-\resumeItemListStart
-\resumeItem{Built Jupyter-based Python scripts to analyze switching dynamics in PZT thin films, improving research efficiency}
-\resumeItem{Developed custom data visualization tools using Matplotlib to effectively display experimental findings and trends }
-\resumeItem{Implemented GIWAXS dataframes and pandas to classify, preprocess, and analyze large-scale research datasets}
-\resumeItemListEnd
-
+  \resumeSubheading
+  {Applied Data Science Researcher}{Jan 2023 -- May 2023}
+  {Georgia Institute of Technology, SMART Lab}{Atlanta, GA}
+  \resumeItemListStart
+  \resumeItem{Built Jupyter-based Python scripts to analyze switching dynamics in PZT thin films, improving research efficiency}
+  \resumeItem{Developed custom data visualization tools using Matplotlib to effectively display experimental findings and trends }
+  \resumeItem{Implemented GIWAXS dataframes and pandas to classify, preprocess, and analyze large-scale research datasets}
+  \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -184,11 +203,10 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
 \small{
   \item{
-    \textbf{Languages:} Python, C, C++, Java, JavaScript, TypeScript, Go, HTML/CSS, Swift, R, Assembly, LaTeX \\
-    \textbf{Frameworks \& Tools:} AWS, Docker, React, Node.js, Flask, FastAPI, Git, JUnit, Supabase, MongoDB, PostgreSQL, SQLite, TensorFlow, PyTorch, OpenCV \\
-    \textbf{Concepts:} Machine Learning, REST APIs, Cloud Infrastructure, CI/CD, Web Development, Deployment, Concurrency \\
-    \textbf{Soft Skills:} Agile Methodology, Collaboration, Leadership, Communication, Problem Solving  
-
+    \textbf{Languages:} Python, C, C++, Java, JavaScript, TypeScript, Go, HTML/CSS, Swift, R, Assembly, \LaTeX \\
+    \textbf{Frameworks \& Tools:} AWS, Docker, React, Node.js, Flask, FastAPI, Git, GitLab CI/CD, Prefect, \texttt{asyncio}/\texttt{aiohttp}, Pandas, NumPy, scikit-learn, TensorFlow, PyTorch, OpenCV, CARLA \\
+    \textbf{Concepts:} Workflow Orchestration, RBAC/Access Control, REST APIs, Cloud Infrastructure, CI/CD, Containerization, Concurrency, Predictive Modeling, Reinforcement Learning \\
+    \textbf{Soft Skills:} Agile Methodology, Collaboration, Leadership, Communication, Problem Solving
   }
 }
 \end{itemize}
