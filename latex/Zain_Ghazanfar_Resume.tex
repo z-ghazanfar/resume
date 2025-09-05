@@ -1,15 +1,17 @@
 \documentclass[letterpaper,10pt]{article}
-
+\sloppy
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
+\usepackage{multicol}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
+\usepackage[top=0.37in, bottom=0.5in, left=0.4in, right=0.4in]{geometry}
 \usepackage{tabularx}
 \input{glyphtounicode}
 
@@ -18,12 +20,6 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
-\addtolength{\oddsidemargin}{-0.7in}
-\addtolength{\evensidemargin}{-0.7in}
-\addtolength{\textwidth}{1.4in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 \raggedbottom
@@ -36,11 +32,8 @@
 
 \pdfgentounicode=1
 
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-3pt}}
-  }
-}
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
@@ -70,7 +63,6 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 
 \begin{document}
 
@@ -90,12 +82,14 @@
 			{B.S. in Computer Science; Minors in Financial Technology \& Business Leadership}{Atlanta, GA}
 
 			\smallskip 
+      \smallskip
 
 			\small
-			\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-			\textit{Courses:} Machine Learning, Design \& Analysis of Algorithms, DSA, Object-Oriented Principles, Intro to AI, Computer Systems \& Networks \\
-			\textit{Awards:} Zell Miller Scholarship, Faculty Honors, Dean's List $|$ \textit{GPA}: 3.94/4.0 \\
-			\end{tabular*}\vspace{-7pt}
+      \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{Awards:} Zell Miller Scholarship, Faculty Honors, Dean's List | \textbf{GPA:} 3.94/4.0 \\
+      \textbf{Relevant Coursework:} Machine Learning, Artificial Intelligence, Design \& Analysis of Algorithms, Data Structures \& Algorithms, \\
+      \quad Systems \& Networks, Probability \& Statistics, Applied Combinatorics, Perception \& Robotics
+      \end{tabular*}\vspace{-7pt}
   \resumeSubHeadingListEnd
 
 % \section{Education}
@@ -130,50 +124,48 @@
 \resumeSubHeadingListStart
 
   \resumeSubheading
-    {Software Engineer Intern – Research Systems}{June 2025 -- Aug 2025}
-    {Arrowstreet Capital}{Boston, MA}
-    \resumeItemListStart
-    \resumeItem{Designed, automated, and maintained distributed compute infrastructure for large-scale quant research, enabling high-throughput data processing and scalable model experimentation}
-    \resumeItem{Optimized workflow orchestration and resource allocation for 1000+ node HPC clusters using Prefect, Python, and custom scheduling logic, reducing job latency and improving system reliability}
-    \resumeItem{Developed robust access-control, provisioning, and monitoring automation for research compute environments, streamlining onboarding and minimizing downtime for mission-critical workloads}
-    \resumeItem{Collaborated with quant researchers and infrastructure teams to deliver scalable, fault-tolerant systems for data-driven research and simulation}
-    \resumeItemListEnd
+  {Software Engineer Intern – Research Systems}{June 2025 -- Aug 2025}
+  {Arrowstreet Capital}{Boston, MA}
+  \resumeItemListStart
+    \resumeItem{Engineered an access-control and provisioning layer on top of \textbf{Prefect} across research compute clusters, streamlining \\ onboarding of research workflows and minimizing downtime in mission-critical pipelines.}
+    \resumeItem{Developed an asynchronous \textbf{Python} client (asyncio, aiohttp) to synchronize Active Directory group states with Prefect APIs, enabling dynamic membership updates at scale with auditable dry-run simulation and real-time logging in GitLab UI.}
+    \resumeItem{Deployed containerized pipelines in \textbf{GitLab CI/CD} to orchestrate pre–market access validations across environments, \\ensuring consistent states before trading workflows launched and reducing operational risk.}
+    \resumeItem{Partnered with research, development, and infrastructure teams to optimize the automation layer for scalability and fault tolerance, ensuring seamless execution of trading and simulation pipelines.}
+  \resumeItemListEnd
 
   \resumeSubheading
   {Machine Learning Engineer \& Co-Founder}{Jan 2024 -- Present}
   {Zaphor Solutions}{Alpharetta, GA}
   \resumeItemListStart
-    \resumeItem{Engineered ML-powered automation systems for inventory tracking, sales trend analysis, and dynamic pricing optimization across 70+ SKUs, scaling business revenue to over \$200K}
-    \resumeItem{Developed and deployed time series forecasting models (ARIMA, Prophet) and demand prediction algorithms to automate inventory management and reorder logic, maintaining a 95\% in-stock rate}
-    \resumeItem{Implemented reinforcement learning and data-driven strategies for pricing and ad optimization, improving conversion rates and reducing costs across multiple product listings}
+    \resumeItem{Built scalable ML pipelines in \textbf{Python} using \textbf{Pandas} and \textbf{PostgreSQL} for real-time inventory tracking, sales trend analysis, and dynamic pricing optimization across 70+ SKUs, scaling revenue to over \$200K.}
+    \resumeItem{Developed and deployed time-series forecasting models (ARIMA, Prophet) and demand prediction algorithms to automate inventory management and reorder logic, maintaining a 95\% in-stock rate.}
+    \resumeItem{Applied reinforcement learning and statistical optimization to ad bidding and pricing, improving conversion rates by 20\% \\and reducing Advertising Cost of Sales (ACoS).}
   \resumeItemListEnd
 
   \resumeSubheading
-  {Machine Learning Research Intern}{Jul 2024 -- Present}
+  {Machine Learning Researcher}{Jul 2024 -- Present}
   {Georgia Institute of Technology, ACT Lab}{Atlanta, GA}
   \resumeItemListStart
-    \resumeItem{Built and optimized deep and reinforcement learning models (CNN, DQN, GAIL, Transformers) in PyTorch for trajectory planning and behavioral prediction in autonomous driving, achieving measurable improvements in simulation}
-    \resumeItem{Led a subteam in refining model architectures, conducting ablation studies, and quantitatively evaluating performance for behavioral cloning and control tasks}
-    \resumeItem{Automated high-fidelity training and evaluation pipelines using CARLA simulator, enabling scalable experimentation and robust data collection}
+    \resumeItem{Implemented and trained deep reinforcement learning agents in \textbf{PyTorch}, leveraging CNNs and Transformers for feature extraction and \textbf{DQNs} for policy optimization, improving trajectory prediction accuracy by 12\% and reducing training convergence time by 18\%.}
+    \resumeItem{Led a subteam of 3 in refining architectures and conducting ablation studies, achieving a 15\% gain in control stability and demonstrating robustness across varied traffic and lane-change scenarios.}
+    \resumeItem{Automated high-fidelity training/evaluation pipelines in \textbf{CARLA} for large-scale simulations (500k+ frames), enabling reproducible benchmarking and accelerating experimentation throughput by 30\%.}
   \resumeItemListEnd
 
   \resumeSubSubSubheading
   {Software Engineer Consultant}{Dec 2022 -- May 2024}
   {Endor Media}
   \resumeItemListStart
-    \resumeItem{Developed scalable AI-powered automation scripts using Python and OpenAI APIs for lead scoring, NLP-based email classification, and predictive analytics, streamlining client acquisition workflows}
-    \resumeItem{Built LLM-driven tools for automated client outreach and personalized communication, increasing qualified lead conversion by 18\%}
-    \resumeItem{Designed and deployed real-time data dashboards by integrating GoHighLevel APIs with custom frontend components, enabling actionable insights for sales and marketing teams}
+    \resumeItem{Engineered \textbf{Python}-based automation pipelines for lead scoring and client outreach, integrating OpenAI GPT-3.5 Turbo and embedding models via API for classification and semantic scoring, reducing manual qualification workload by 40\%.}    
+    \resumeItem{Built data pipelines to ingest and normalize GoHighLevel API streams, integrating with a React-based UI and Node.js services to deliver real-time visibility into campaign KPIs and sales performance.}  
   \resumeItemListEnd
-
 
   \resumeSubheading
   {Applied Data Science Researcher}{Jan 2023 -- May 2023}
   {Georgia Institute of Technology, SMART Lab}{Atlanta, GA}
   \resumeItemListStart
-    \resumeItem{Built Jupyter-based Python scripts to automate statistical analysis and modeling of switching dynamics in PZT thin films, improving research efficiency}
-    \resumeItem{Developed custom data visualization tools using Matplotlib and Seaborn to effectively display experimental findings, trends, and model predictions}
-    \resumeItem{Implemented GIWAXS dataframes and pandas to classify, preprocess, and analyze large-scale research datasets, enabling advanced feature extraction and predictive modeling}
+    \resumeItem{Automated data analysis workflows for PZT thin-film experiments in \textbf{Python} using pandas and numpy, reducing manual processing time by 35\% and enabling reproducible statistical modeling.}
+    \resumeItem{Developed visualization pipelines in \textbf{Matplotlib/Seaborn} to evaluate switching dynamics, improving interpretability of experimental results for publication and presentation.}
+    \resumeItem{Engineered preprocessing and classification routines for 10k+ \textbf{GIWAXS} measurements, applying k-means clustering and statistical analysis to extract structured features for downstream predictive modeling.}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -185,16 +177,8 @@
 \resumeSubHeadingListEnd
 
 \section{Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-\small{
-  \item{
-    \textbf{Languages:} Python, C++, C, Java, PostgreSQL, JavaScript, TypeScript, R, Go, Swift, Assembly, HTML/CSS, \LaTeX \\
-  	extbf{Frameworks \& Tools:} NumPy, Pandas, scikit-learn, TensorFlow, PyTorch, Jupyter, Prefect, Docker, Kubernetes, AWS, Bash, Git, GitLab CI/CD, FastAPI, Flask, OpenCV, Async, Node.js, React \\
-  	extbf{Concepts:} Distributed Computing, High Performance Computing, Time Series Analysis, Backtesting, Market Data Processing, Predictive Modeling, Reinforcement Learning, Statistical Analysis, Data Pipelining, Containerization, Cloud Infrastructure, Concurrency \\
-    \textbf{Soft Skills:} Problem Solving, Communication, Collaboration, Leadership, Adaptability, Initiative, Agile Methodology
-  }
-}
-\end{itemize}
-
+\noindent \textbf{Languages:} Python, C++, Java, R, SQL/PostgreSQL, JavaScript/TypeScript, Go, Swift, Assembly, HTML/CSS, LaTeX \\
+\noindent \textbf{Frameworks \& Tools:} NumPy, Pandas, scikit-learn, TensorFlow, PyTorch, Jupyter, Matplotlib/Seaborn, Prefect, Docker/Kubernetes, Terraform, AWS, Git/GitLab CI/CD, FastAPI/Flask, React/Node.js \\
+\noindent \textbf{Concepts:} Reinforcement Learning, Time Series Forecasting, Predictive Modeling, Market Data Processing, Backtesting, Concurrency, Distributed \& Cloud Computing, High-Performance Computing, Natural Language Processing (NLP)
 
 \end{document}

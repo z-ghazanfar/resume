@@ -17,6 +17,8 @@ INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/marvosym/marvosym.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/marvosym/marvosym.sty
+INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -106,6 +108,10 @@ INPUT /usr/local/texlive/2025basic/texmf-dist/tex/generic/babel/locale/en/babel-
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/generic/babel/locale/en/babel-en.ini
+INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2025basic/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT /usr/local/texlive/2025basic/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/tools/array.sty
@@ -152,8 +158,8 @@ INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/latex-fonts/lasy1
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/latex-fonts/lasy7.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
-INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm
 INPUT /usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT Zain_Ghazanfar_Resume.aux
 INPUT ./Zain_Ghazanfar_Resume.out
@@ -164,7 +170,6 @@ INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
