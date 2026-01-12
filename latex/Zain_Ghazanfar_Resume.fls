@@ -159,6 +159,9 @@ INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/latex-fonts/lasy7
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm
 INPUT /usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT Zain_Ghazanfar_Resume.aux

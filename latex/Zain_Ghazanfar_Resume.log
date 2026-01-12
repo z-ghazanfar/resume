@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.3)  15 SEP 2025 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.3)  12 JAN 2026 13:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -415,6 +415,12 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 82.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 89.
+ (/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
 
 
 
@@ -437,15 +443,15 @@ Package rerunfilecheck Info: File `Zain_Ghazanfar_Resume.out' has not changed.
 (rerunfilecheck)             Checksum: 203B6188DC1ACEFF137D842673F2DBAF;418.
  ) 
 Here is how much of TeX's memory you used:
- 11500 strings out of 471080
- 182719 string characters out of 5505910
+ 11520 strings out of 471080
+ 183079 string characters out of 5505910
  620069 words of memory out of 5000000
- 37988 multiletter control sequences out of 15000+600000
+ 38005 multiletter control sequences out of 15000+600000
  631731 words of font info for 59 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  75i,11n,79p,410b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/zainghazanfar/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Zain_Ghazanfar_Resume.pdf (1 page, 138608 bytes).
+Output written on Zain_Ghazanfar_Resume.pdf (1 page, 138422 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream
